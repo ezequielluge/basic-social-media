@@ -1,0 +1,87 @@
+body {
+    font-family: "Special Elite", serif;
+    background-color: lightblue;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    background-color: rgb(166, 205, 240);
+    box-shadow: 1px 1px 5px rgb(164, 164, 255);
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(74, 74, 230);
+    margin-bottom: 0;
+}
+
+button {
+    padding: 8px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(74, 74, 230);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: all .5s ease;
+}
+button:hover {
+    background-color: rgb(84, 84, 237);
+}
+
+form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(180, 228, 228);
+    box-shadow: 0 2px 5px rgb(114, 114, 255);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+label {
+    display: block;
+    font-size: 1.5em;
+    margin: 10px auto;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+input,textarea {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 60%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* POSTEOS ANTERIORES */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.editForm {
+    display: none;
+    padding: 0;
+}
+
+.postItem {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(180, 228, 228);
+    box-shadow: 0 2px 5px rgb(114, 114, 255);
+    border-radius: 20px;
+}
+.postItem input, textarea {
+    margin: 0 auto;
+}
