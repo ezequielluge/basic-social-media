@@ -1,3 +1,4 @@
+/* NORMALIZACIÓN */
 body {
     font-family: "Special Elite", serif;
     background-color: lightblue;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* CONTENEDOR PRINCIPAL */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -16,9 +18,23 @@ body {
     border-radius: 10px;
 }
 
+/* TITULO */
 h1 {
     color: rgb(74, 74, 230);
     margin-bottom: 0;
+}
+
+/* FORMULARIO */
+form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(180, 228, 228);
+    box-shadow: 0 2px 5px rgb(114, 114, 255);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 button {
@@ -34,19 +50,6 @@ button {
 button:hover {
     background-color: rgb(84, 84, 237);
 }
-
-form {
-    width: 60%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgb(180, 228, 228);
-    box-shadow: 0 2px 5px rgb(114, 114, 255);
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-
 label {
     display: block;
     font-size: 1.5em;
@@ -82,6 +85,8 @@ ul {
     box-shadow: 0 2px 5px rgb(114, 114, 255);
     border-radius: 20px;
 }
+
 .postItem input, textarea {
-    margin: 0 auto;
+    margin: 0 auto
+
 }

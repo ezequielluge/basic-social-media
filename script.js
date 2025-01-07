@@ -1,6 +1,8 @@
 const urlBase = 'https://jsonplaceholder.typicode.com/posts';
 let posts = [];
 
+// ### GET DATA
+// Toma la información de la API mediante Fetch y URL base
 function getData() {
     fetch(urlBase)
         .then(res => res.json())
@@ -14,6 +16,9 @@ function getData() {
 
 getData();
 
+// ### RENDER POST LIST
+// Mostrar los posts ya cargados en la página como una lista desordenada
+// Utilizando un forEach y creando elementos "li"
 function renderPostList() {
     const postList = document.getElementById('postList');
     postList.innerHTML = '';
@@ -38,6 +43,9 @@ function renderPostList() {
     });
 }
 
+
+// ### POST DATA
+// Enviar la información de un nuevo post a la API mediante Fetch POST
 function postData() {
     const postTitleInput = document.getElementById('postTitle');
     const postBodyInput = document.getElementById('postBody');
@@ -70,11 +78,16 @@ function postData() {
         .catch(error => console.error("Error al crear el post. " + error));
 }
 
+
+// ### EDIT POST
+// Muestra u oculta la edición de un post cambiando su style display
 function editPost(id) {
     const editForm = document.getElementById(`editForm-${id}`);
     editForm.style.display = (editForm.style.display == 'none') ? 'block' : 'none';
 }
 
+// ### UPDATE POST
+// Actualiza la información de un post en la API mediante Fetch PUT
 function updatePost(id) {
     const editTitle = document.getElementById(`editTitle-${id}`);
     const editBody = document.getElementById(`editBody-${id}`);
@@ -104,6 +117,8 @@ function updatePost(id) {
         .catch(error => console.error("Error al actualizar el post. " + error));
 }
 
+// ### DELETE POST
+// Elimina un post de la API mediante Fetch DELETE
 function deletePost(id) {
     fetch(`${urlBase}/${id}`, {
         method: 'DELETE',
